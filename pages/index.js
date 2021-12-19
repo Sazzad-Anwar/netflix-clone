@@ -11,13 +11,13 @@ export default function Home() {
     <Layout>
 
       {/* hero section */}
-      <section className='relative h-[31.2rem] lg:h-[46.5rem] w-screen'>
+      <section className='relative h-[31.2rem] lg:h-[46.5rem] w-full'>
         <Image
           src="/hero-image.jpg"
           alt='hero image'
           layout="fill"
           objectFit='cover'
-          className="-z-0 brightness-50"
+          className="-z-0 brightness-[.3]"
         />
         <div className='absolute inset-0'>
           <div className='flex justify-center items-center lg:pt-16 h-[31.2rem] lg:h-[46.5rem] z-10'>
