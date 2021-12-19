@@ -11,15 +11,24 @@ export default function Home() {
     <Layout>
 
       {/* hero section */}
-      <section style={{ background: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/hero-image.jpg');  no-repeat cover center" }}>
-        <div className='flex justify-center items-center lg:pt-16 h-[31.2rem] lg:h-[46.5rem]'>
-          <div className='w-screen px-[2rem] lg:px-0 lg:w-[47rem]'>
-            <h1 className='xl:mt-0 text-[1.75rem] lg:text-[3.125rem] xl:text-[4rem] leading-tight text-center text-white font-bold'>Unlimited movies, TV shows, and more.</h1>
-            <h2 className='text-lg lg:text-[1.2rem] xl:text-[1.65rem] text-center text-white my-2'>Watch anywhere. Cancel anytime.</h2>
-            <p className='text-lg px-10 mb-2 lg:px-0 lg:text-[1.2rem] text-center text-white mt-3 lg:mt-9 lg:mb-5'>Ready to watch? Enter your email to create or restart your membership.</p>
-            <div className='h-auto lg:h-[4.37rem] w-full flex flex-col lg:flex-row items-center'>
-              <input type="text" className='focus:outline-none pl-5 h-[3.125rem] lg:h-full w-full lg:w-2/3 lg:rounded-none' placeholder='Email address' />
-              <button type='button' className='bg-[#E50914] px-4 text-white text-base h-[2.5rem] lg:text-[1.8rem] mt-3 lg:mt-0 lg:h-full lg:w-1/3 rounded-sm lg:rounded-none'>Get Started <i className="bi bi-chevron-right"></i></button>
+      <section className='relative h-[31.2rem] lg:h-[46.5rem] w-screen'>
+        <Image
+          src="/hero-image.jpg"
+          alt='hero image'
+          layout="fill"
+          objectFit='cover'
+          className="-z-0 brightness-50"
+        />
+        <div className='absolute inset-0'>
+          <div className='flex justify-center items-center lg:pt-16 h-[31.2rem] lg:h-[46.5rem] z-10'>
+            <div className='w-screen px-[2rem] lg:px-0 lg:w-[47rem]'>
+              <h1 className='xl:mt-0 text-[1.75rem] lg:text-[3.125rem] xl:text-[4rem] leading-tight text-center text-white font-bold'>Unlimited movies, TV shows, and more.</h1>
+              <h2 className='text-lg lg:text-[1.2rem] xl:text-[1.65rem] text-center text-white my-2'>Watch anywhere. Cancel anytime.</h2>
+              <p className='text-lg px-10 mb-2 lg:px-0 lg:text-[1.2rem] text-center text-white mt-3 lg:mt-9 lg:mb-5'>Ready to watch? Enter your email to create or restart your membership.</p>
+              <div className='h-auto lg:h-[4.37rem] w-full flex flex-col lg:flex-row items-center'>
+                <input type="text" className='focus:outline-none pl-5 h-[3.125rem] lg:h-full w-full lg:w-2/3 lg:rounded-none' placeholder='Email address' />
+                <button type='button' className='bg-[#E50914] px-4 text-white text-base h-[2.5rem] lg:text-[1.8rem] mt-3 lg:mt-0 lg:h-full lg:w-1/3 rounded-sm lg:rounded-none'>Get Started <i className="bi bi-chevron-right"></i></button>
+              </div>
             </div>
           </div>
         </div>
