@@ -11,6 +11,6 @@ This is a clone of the Netflix website for learning purposes. It is only fronten
 -   TailwindCSS
 -   Bootstrap icons
 
-[Live Link](https://clone-netlify.netlify.app/)
+[Live Link](https://netclix.netlify.app)
 
 <img src="./web-photo.png" alt="netflix">
