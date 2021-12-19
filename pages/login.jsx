@@ -7,20 +7,8 @@ const Login = () => {
 
     return (
         <Layout>
-            <section className='relative z-0'>
-                <div className='hidden lg:block'>
-                    <Image
-                        src='/hero-image.jpg'
-                        layout="responsive"
-                        quality={100}
-                        height={745}
-                        width={1920}
-                        objectFit='cover'
-                        className='filter brightness-[.30]'
-                        alt="hero-img"
-                    />
-                </div>
-                <div className='py-20 lg:absolute bg-black lg:bg-transparent lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:py-16'>
+            <section className='relative z-0' style={{ background: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/hero-image.jpg');  no-repeat center" }}>
+                <div className='py-20 flex justify-center items-center bg-black lg:bg-transparent  lg:py-16'>
                     <div className='w-screen px-[2rem] lg:p-16 lg:w-[28rem]' style={{
                         background: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))'
                     }}>

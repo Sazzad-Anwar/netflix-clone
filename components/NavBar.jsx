@@ -8,7 +8,7 @@ const NavBar = () => {
 
     return (
         <nav className="py-7 bg-transparent absolute w-full z-10">
-            <div className="mx-[3rem]">
+            <div className="mx-[1rem] lg:mx-[3rem]">
                 <div className="flex justify-between items-center">
                     <Link href="/">
                         <a>
