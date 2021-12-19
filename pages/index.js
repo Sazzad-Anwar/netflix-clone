@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image';
 import { useState } from 'react';
 import Accordion from '../components/Accordion';
-import Layout from '../Components/Layout';
-import faqData from './../faq.json';
+import Layout from '../components/Layout';
+import faqData from '../faq.json';
 
 export default function Home() {
 
