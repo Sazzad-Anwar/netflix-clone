@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from 'next/router';
 
-const Nav = () => {
+const NavBar = () => {
 
     const router = useRouter();
 
@@ -26,4 +26,4 @@ const Nav = () => {
     )
 }
 
-export default Nav;
+export default NavBar;

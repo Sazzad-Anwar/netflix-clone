@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import Nav from './Nav';
+import NavBar from './NavBar';
 
 const Layout = ({ title, children }) => {
     return (
@@ -13,9 +13,8 @@ const Layout = ({ title, children }) => {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"></link>
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
             </Head>
-            <Nav />
+            <NavBar />
             <main>
                 {children}
             </main>
